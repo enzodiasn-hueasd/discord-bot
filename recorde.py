@@ -39,8 +39,8 @@ async def join_voice():
 
 
 @bot.event
-async def on_ready():
-    print(f"Logado como {bot.user}")
+async def setup_hook():
+    bot.loop.create_task(join_voice())
 
 
 class MyBot(commands.Bot):
