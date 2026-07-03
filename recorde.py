@@ -3,7 +3,7 @@ from discord.ext import commands, tasks
 import os
 import asyncio
 
-TOKEN = os.getenv("TOKEN")
+print("TOKEN RAW:", os.getenv("TOKEN"))
 VOICE_CHANNEL_ID = 1367543413808955422
 
 intents = discord.Intents.default()
