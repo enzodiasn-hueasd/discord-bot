@@ -1,7 +1,8 @@
 import discord
 from discord.ext import commands, tasks
+import os
 
-TOKEN = "MTUyMjQ2MTk1MjkzOTUyODI1NA.GHAdeP.zJaxsgGILcUYzLxwIvv9NayGdZbDHcg7YtKWqY"
+TOKEN = os.getenv("TOKEN")
 VOICE_CHANNEL_ID = 1367543413808955422
 
 intents = discord.Intents.default()
