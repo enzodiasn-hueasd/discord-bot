@@ -9,7 +9,7 @@ VOICE_CHANNEL_ID = 1367543413808955422
 intents = discord.Intents.default()
 intents.guilds = True
 
-bot = MyBot(command_prefix="!", intents=intents)
+bot = commands.Bot(command_prefix="!", intents=intents)
 
 
 async def join_voice():
